@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shop the Don't Be Late Tee by COMFTEE. Everyday comfort, from AM to PM.">
+  <title>Don't Be Late Tee | COMFTEE</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/productpage.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg container-fluid px-4 px-xl-5" aria-label="Main navigation">
+      <a class="navbar-brand" href="#" aria-label="COMFTEE home">
+        <img src="images/comftee-logo.png" alt="COMFTEE" class="brand-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html#productTop" aria-current="page" id="shopNavLink">SHOP</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="nav-tools">
+          <button class="icon-button" type="button" aria-label="Search"><span class="search-symbol"></span></button>
+          <button class="icon-button cart-nav" type="button" aria-label="Shopping cart">
+            <img src="images/shopping-cart.png" alt="">
+            <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+          </button>
+          <button class="icon-button user-symbol" type="button" aria-label="Account"><img src="images/person.png" alt=""></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="breadcrumb-wrap"><nav class="product-breadcrumb" aria-label="Breadcrumb"><a href="home.html">Home</a><span>›</span><a href="index.html#productTop" id="breadcrumbShop">Shop</a><span>›</span><span class="breadcrumb-current" id="breadcrumbProduct">Don't Be Late Tee</span></nav></div>
+  <main class="container-fluid product-page px-3 px-lg-5">
+    <section class="product-top row g-4 g-xl-5" id="productTop" aria-labelledby="productTitle">
+      <div class="col-12 col-lg-7">
+        <div class="gallery">
+          <div class="thumbnail-list" role="group" aria-label="Choose product image">
+            <button class="thumbnail active" type="button" data-image="images/dont-be-late-front.png" aria-label="View front of shirt" aria-pressed="true">
+              <img src="images/dont-be-late-front.png" alt="">
+            </button>
+            <button class="thumbnail" type="button" data-image="images/dont-be-late-back.png" aria-label="View back of shirt" aria-pressed="false">
+              <img src="images/dont-be-late-back.png" alt="">
+            </button>
+            <button class="thumbnail" type="button" data-image="images/dont-be-late-side.png" aria-label="View side of shirt" aria-pressed="false">
+              <img src="images/dont-be-late-side.png" alt="">
+            </button>
+          </div>
+
+          <div class="main-image-wrap">
+            <img id="mainProductImage" class="main-product-image" src="images/dont-be-late-front.png" alt="Don't Be Late Tee in charcoal gray, front view">
+            <button class="zoom-button" type="button" id="zoomButton" aria-label="Open larger product image">
+              <img src="images/zoom-in.png" alt="">
+            </button>
+          </div>
+        </div>
+        <div class="gallery-dots" role="group" aria-label="Product image slides">
+          <button class="gallery-dot active" type="button" data-index="0" aria-label="Show image 1" aria-pressed="true"></button>
+          <button class="gallery-dot" type="button" data-index="1" aria-label="Show image 2" aria-pressed="false"></button>
+          <button class="gallery-dot" type="button" data-index="2" aria-label="Show image 3" aria-pressed="false"></button>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <div class="product-info">
+          <h1 id="productTitle">Don’t Be Late Tee</h1>
+          <div class="rating-line" aria-label="Rated 4.5 out of 5 from more than one thousand reviews">
+            <span class="stars" aria-hidden="true">★★★★<span class="half-star">★</span></span>
+            <span>4.5 (1k+ Reviews)</span>
+          </div>
+          <div class="price-line">
+            <span class="current-price">₱499</span>
+            <del class="old-price">₱599</del>
+            <span class="discount-tag">16% OFF</span>
+          </div>
+          <p class="short-description">A simple reminder to show up, get moving, and make the most of the day.</p>
+
+          <hr class="soft-rule">
+          <fieldset class="option-group">
+            <legend>COLOR: <span id="selectedColorName">Gray</span></legend>
+            <div class="color-options" role="group" aria-label="Choose color">
+              <button class="color-swatch sand" type="button" data-color="Beige" aria-label="Beige color" aria-pressed="false"></button>
+              <button class="color-swatch stone" type="button" data-color="Stone" aria-label="Stone color" aria-pressed="false"></button>
+              <button class="color-swatch sage" type="button" data-color="Sage" aria-label="Sage color" aria-pressed="false"></button>
+              <button class="color-swatch gray" type="button" data-color="Gray" aria-label="Gray color" aria-pressed="false"></button>
+              <button class="color-swatch charcoal selected" type="button" data-color="Charcoal" aria-label="Charcoal color" aria-pressed="true"></button>
+            </div>
+          </fieldset>
+
+          <fieldset class="option-group size-group">
+            <legend class="size-legend"><span>SIZE: <span id="selectedSizeName">M</span></span><button class="size-guide-link" type="button" data-bs-toggle="modal" data-bs-target="#sizeGuideModal">SIZE GUIDE</button></legend>
+            <div class="size-options" role="group" aria-label="Choose size">
+              <button class="size-button" type="button" data-size="XS" aria-pressed="false">XS</button>
+              <button class="size-button" type="button" data-size="S" aria-pressed="false">S</button>
+              <button class="size-button selected" type="button" data-size="M" aria-pressed="true">M</button>
+              <button class="size-button" type="button" data-size="L" aria-pressed="false">L</button>
+              <button class="size-button" type="button" data-size="XL" aria-pressed="false">XL</button>
+            </div>
+          </fieldset>
+
+          <div class="quantity-size-row">
+            <div class="quantity-block"><label for="quantity">QUANTITY:</label><div class="quantity-control"><button type="button" id="decreaseQty" aria-label="Decrease quantity">−</button><output id="quantity" for="decreaseQty increaseQty" aria-live="polite">1</output><button type="button" id="increaseQty" aria-label="Increase quantity">+</button></div></div>
+            <span class="stock-note">50 in Stock</span>
+          </div>
+
+          <div class="purchase-actions">
+            <button class="btn-outline-pill" id="addToCart" type="button">
+              <img src="images/shopping-cart.png" alt=""> ADD TO CART
+            </button>
+            <a class="btn-teal-pill" id="orderNow" href="mailto:orders@comfteee142.com">ORDER NOW</a>
+            <button class="favorite-button" type="button" aria-label="Add to favorites" aria-pressed="false" id="favoriteButton">
+              <img src="images/heart.png" alt="">
+            </button>
+          </div>
+          <p class="cart-feedback" id="cartFeedback" role="status" aria-live="polite"></p>
+          <div class="faq-accordion accordion" id="productFaq">
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqShipping" aria-expanded="false" aria-controls="faqShipping">Shipping &amp; Delivery</button></h2>
+              <div id="faqShipping" class="accordion-collapse collapse" data-bs-parent="#productFaq"><div class="accordion-body">Orders are prepared for dispatch after confirmation. Delivery time may vary depending on your location.</div></div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqReturns" aria-expanded="false" aria-controls="faqReturns">Returns &amp; Exchanges</button></h2>
+              <div id="faqReturns" class="accordion-collapse collapse" data-bs-parent="#productFaq"><div class="accordion-body">If you receive an incorrect or damaged item, contact our team so we can assist you with the next steps.</div></div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCare" aria-expanded="false" aria-controls="faqCare">How do I care for my tee?</button></h2>
+              <div id="faqCare" class="accordion-collapse collapse" data-bs-parent="#productFaq"><div class="accordion-body">Machine wash cold and tumble dry on low. Wash with similar colors to help keep your tee looking its best.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="details-section" aria-label="Product information">
+      <div class="details-tabs" role="tablist" aria-label="Product information tabs">
+        <button class="details-tab active" id="detailsTab" type="button" role="tab" aria-selected="true" aria-controls="detailsPanel">PRODUCT DETAILS</button>
+        <button class="details-tab" id="reviewsTab" type="button" role="tab" aria-selected="false" aria-controls="reviewsPanel">REVIEWS</button>
+      </div>
+
+      <div id="detailsPanel" class="tab-panel" role="tabpanel" aria-labelledby="detailsTab">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-lg-7">
+            <p class="details-copy">Beat the morning rush without sacrificing your style. Crafted from breathable, premium Pima Cotton, the <strong>Don’t Be Late Tee</strong> is built for the daily grind of the working class. Designed with a clean, versatile fit and reinforced stitching, it keeps you comfortable and looking sharp from your morning commute all the way to after-work plans.</p>
+            <ul class="product-features">
+              <li><img src="images/material-icon.png" alt=""> Material: 100% Premium Pima Cotton</li>
+              <li><img src="images/fit-icon.png" alt=""> Fit: Relaxed, everyday modern fit</li>
+              <li><img src="images/care-icon.png" alt=""> Care: Machine wash cold, tumble dry low</li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-5">
+            <img class="fabric-image" src="images/fabric-detail.png" alt="Close-up of the soft fabric used for COMFTEE shirts">
+          </div>
+        </div>
+      </div>
+
+      <div id="reviewsPanel" class="tab-panel reviews-panel" role="tabpanel" aria-labelledby="reviewsTab" hidden>
+        <div class="review-summary">
+          <div class="overall-rating">
+            <strong>4.5</strong> <span>out of 5</span>
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <small>(1k+ Reviews)</small>
+          </div>
+          <div class="rating-breakdown">
+            <div><span>5 Stars</span><span class="rating-track"><i style="width:85%"></i></span></div>
+            <div><span>4 Stars</span><span class="rating-track"><i style="width:47%"></i></span></div>
+            <div><span>3 Stars</span><span class="rating-track"><i style="width:72%"></i></span></div>
+            <div><span>2 Stars</span><span class="rating-track"><i style="width:19%"></i></span></div>
+            <div><span>1 Star</span><span class="rating-track"><i style="width:7%"></i></span></div>
+          </div>
+        </div>
+        <div class="review-list-heading"><strong>Review List</strong><small>Showing 1 - 3 of 1k+ result</small></div>
+        <div class="review-slider-wrap"><button class="review-arrow review-prev" type="button" aria-label="Previous reviews">‹</button><div class="review-slider" id="reviewSlider" aria-label="Customer reviews">
+          <article class="review-card"><div class="stars">★★★★★</div><h3>Very comfy to Wear</h3><p>Super comfy and easy to style!</p><div class="review-author"><img src="images/juan-pfp.png" alt=""><span><b>Juan Dela Cruz</b><small>10/06/2026</small></span></div></article>
+          <article class="review-card"><div class="stars">★★★☆☆</div><h3>It’s Okay 👍🏻</h3><p>Overall, it's good.</p><div class="review-author"><img src="images/lotto-pfp.png" alt=""><span><b>Lotto Malasin</b><small>10/15/26</small></span></div></article>
+          <article class="review-card"><div class="stars">★★★★☆</div><h3>Simple but Stylish!</h3><p>I just wish there were more color options.</p><div class="review-author"><img src="images/verity-pfp.png" alt=""><span><b>Verity</b><small>10/17/26</small></span></div></article>
+        </div><button class="review-arrow review-next" type="button" aria-label="Next reviews">›</button></div>
+      </div>
+    </section>
+    <section class="recommendations-section" aria-labelledby="recommendationsTitle">
+      <h2 id="recommendationsTitle">YOU MAY ALSO LIKE</h2>
+      <div class="recommendation-grid" id="recommendationGrid">
+        <a class="recommendation-card" data-product="everyday-comfort-tee" href="index.html?product=everyday-comfort-tee#productTop">
+          <div class="recommendation-image"><span class="recommendation-discount">16% OFF</span><img src="images/everyday-comfort-tee.png" alt="Everyday Comfort Tee"></div>
+          <div class="recommendation-meta"><h3>Everyday Comfort Tee</h3><span class="recommendation-rating">★ 4.5</span></div>
+          <p>₱499 <del>₱599</del></p>
+        </a>
+        <a class="recommendation-card" data-product="do-good-work-tee" href="index.html?product=do-good-work-tee#productTop">
+          <div class="recommendation-image"><span class="recommendation-discount">16% OFF</span><img src="images/do-good-work-tee.png" alt="Do Good Work Tee"></div>
+          <div class="recommendation-meta"><h3>Do Good Work Tee</h3><span class="recommendation-rating">★ 4.5</span></div>
+          <p>₱499 <del>₱599</del></p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row gy-4">
+        <div class="col-12 col-lg-6 footer-brand">
+          <img src="images/comftee-logo.png" alt="COMFTEE" class="footer-logo">
+          <p>Long days, busy schedules, and<br> everything in between.<br>Comftee brings comfort to your<br> everyday rotation, from AM to PM.</p>
+          <div class="social-links" aria-label="Social media">
+            <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener"><img src="images/Facebook.png" alt=""></a><a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener"><img src="images/Instagram.png" alt=""></a><a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener"><img src="images/LinkedIn.png" alt=""></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-1 footer-column"><h2>EXPLORE</h2><a href="home.html">Home</a><a href="index.html#productTop">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+        <div class="col-6 col-lg-2 footer-column"><h2>INFORMATION</h2><a href="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html">Terms &amp; Conditions</a></div>
+        <div class="col-12 col-lg-3 footer-column contact-column">
+          <h2>GET IN TOUCH</h2>
+          <p><img class="contact-icon" src="images/Mail.png" alt=""><span>Email Us<small>Have a question? Send us an email<br><a href="mailto:hello@comftee142.com">hello@comftee142.com</a></small></span></p>
+          <p><img class="contact-icon" src="images/Phone call.png" alt=""><span>Contact Us<small>Need Assistance? Give us a call!<br><a href="tel:+639000000000">+63 900 000 0000</a></small></span></p>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 comftee. All Rights Reserved.</span><span>From AM to PM.</span></div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="sizeGuideModal" tabindex="-1" aria-labelledby="sizeGuideTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content size-modal">
+        <div class="modal-header"><h2 class="modal-title" id="sizeGuideTitle">Size Guide</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+        <div class="modal-body">
+          <p class="size-guide-note">Measurements are in inches. For a relaxed fit, choose your usual size.</p>
+          <div class="table-responsive"><table class="table size-table">
+            <thead><tr><th>Size</th><th>Chest</th><th>Length</th><th>Shoulder</th></tr></thead>
+            <tbody><tr><th>XS</th><td>34</td><td>25</td><td>15</td></tr><tr><th>S</th><td>36</td><td>26</td><td>16</td></tr><tr><th>M</th><td>38</td><td>27</td><td>17</td></tr><tr><th>L</th><td>40</td><td>28</td><td>18</td></tr><tr><th>XL</th><td>42</td><td>29</td><td>19</td></tr></tbody>
+          </table></div>
+          <small class="text-muted">Please allow a small measurement difference due to manual measuring.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-label="Enlarged product image" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content image-modal">
+      <button type="button" class="btn-close ms-auto m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      <img id="zoomedProductImage" src="images/dont-be-late-front.png" alt="Enlarged view of the Don't Be Late Tee">
+    </div></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/productpage.js"></script>
+</body>
+</html>
