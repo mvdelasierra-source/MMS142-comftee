@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | COMFTEE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="css/contact-form.css">
+</head>
+<body>
+  <div class="page-shell">
+
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg container-fluid px-4 px-xl-5" aria-label="Main navigation">
+        <a class="navbar-brand" href="home.html" aria-label="COMFTEE home"><img src="images/comftee-logo.png" alt="COMFTEE" class="brand-logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNavigation">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="home.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="home.html">SHOP</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html" aria-current="page">CONTACT</a></li>
+          </ul>
+          <div class="nav-tools">
+            <a class="icon-button" href="index.html" aria-label="Search"><span class="search-symbol"></span></a>
+            <a class="icon-button cart-nav" href="cart.html" aria-label="Shopping cart">
+              <img src="images/shopping-cart.png" alt="">
+              <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+            </a>
+            <a class="icon-button" href="login.html" aria-label="Account"><img src="images/person.png" alt=""></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="contact-main">
+      <div class="container-fluid contact-container">
+        <div class="row align-items-center contact-row">
+          <section class="col-12 col-lg-6 contact-visual" aria-label="Contact introduction">
+            <div class="visual-copy">
+              <h1>Ask us your<br class="d-none d-sm-block"> question here →</h1>
+              <p class="contact-intro">Feel free to reach out for help with your order or any questions you may have regarding your purchase.</p>
+              <div class="contact-details">
+                <p><i class="bi bi-envelope" aria-hidden="true"></i><a href="mailto:hello@comftee142.com">hello@comftee142.com</a></p>
+                <p><i class="bi bi-geo-alt" aria-hidden="true"></i><span>123 Laguna, Philippines</span></p>
+                <p><i class="bi bi-telephone" aria-hidden="true"></i><a href="tel:+639000000000">+63 900 000 0000</a></p>
+              </div>
+            </div>
+          </section>
+
+          <section class="col-12 col-lg-6 form-column" aria-label="Send us a message">
+            <form class="contact-form" id="contactForm">
+              <div class="mb-4">
+                <label class="form-label" for="fullName">Full name</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="ex. Juan Dela Cruz"
+                  autocomplete="name"
+                  required
+                >
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label" for="emailAddress">Email address</label>
+                <input
+                  class="form-control"
+                  type="email"
+                  id="emailAddress"
+                  name="emailAddress"
+                  placeholder="ex. juandelacruz@gmail.com"
+                  autocomplete="email"
+                  required
+                >
+              </div>
+              <div class="mb-4">
+                <label class="form-label" for="phoneNumber">Phone number</label>
+                <input
+                  class="form-control"
+                  type="tel"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  placeholder="ex. 09123456789"
+                  autocomplete="tel"
+                  inputmode="tel"
+                  required
+                >
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label" for="message">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  placeholder="Write your message here"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="d-flex justify-content-start">
+                <button class="btn send-button" type="submit">Send message</button>
+              </div>
+              <p class="form-note" id="formNote" aria-live="polite">
+                Your email app will open with your message ready to send.
+              </p>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container-fluid px-4 px-lg-5">
+        <div class="row gy-4">
+          <div class="col-12 col-lg-6 footer-brand">
+            <img src="images/comftee-logo.png" alt="COMFTEE" class="footer-logo">
+            <p>Long days, busy schedules, and<br> everything in between.<br>Comftee brings comfort to your<br> everyday rotation, from AM to PM.</p>
+            <div class="social-links" aria-label="Social media">
+              <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener"><img src="images/Facebook.png" alt=""></a>
+              <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener"><img src="images/Instagram.png" alt=""></a>
+              <a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener"><img src="images/LinkedIn.png" alt=""></a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-1 footer-column"><h2>EXPLORE</h2><a href="home.html">Home</a><a href="index.html">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+          <div class="col-6 col-lg-2 footer-column"><h2>INFORMATION</h2><a href="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html">Terms &amp; Conditions</a></div>
+          <div class="col-12 col-lg-3 footer-column contact-column">
+            <h2>GET IN TOUCH</h2>
+            <p><img class="contact-icon" src="images/Mail.png" alt=""><span>Email Us<small>Have a question? Send us an email<br><a href="mailto:hello@comftee142.com">hello@comftee142.com</a></small></span></p>
+            <p><img class="contact-icon" src="images/Phone call.png" alt=""><span>Contact Us<small>Need Assistance? Give us a call!<br><a href="tel:+639000000000">+63 900 000 0000</a></small></span></p>
+          </div>
+        </div>
+        <div class="footer-bottom"><span>© 2026 comftee. All Rights Reserved.</span><span>From AM to PM.</span></div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/contact-form.js" defer></script>
+  
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+      const cartCount = document.getElementById("cartCount");
+      const savedItems = JSON.parse(localStorage.getItem("comfteeCartItems") || "[]");
+
+      const totalItems = savedItems.reduce(
+        (total, item) => total + (Number(item.quantity) || 0), 0
+      );
+
+      cartCount.textContent = totalItems;
+  });
+  </script>
+  
+</body>
+</html>
