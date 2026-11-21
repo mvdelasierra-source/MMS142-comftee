@@ -25,38 +25,79 @@
 <body>
 
   <!-- NAVIGATION BAR -->
-  <header class="site-header">
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar navbar-expand-lg site-nav">
+        <div class="container-fluid px-4 px-lg-5">
 
-    <nav class="navbar">
+            <a class="brand" href="index.html">comftee</a>
 
-      <a href="#" class="navbar-brand">comftee</a>
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav"
+                aria-controls="mainNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
 
-      <div class="nav-links">
-        <a href="#">HOME</a>
-        <a href="#">SHOP</a>
-        <a href="#">ABOUT</a>
-        <a href="#">CONTACT</a>
-      </div>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <div class="navbar-actions">
+            <div class="collapse navbar-collapse justify-content-center" id="mainNav">
 
-        <a href="#" aria-label="Search">
-          <i class="bi bi-search"></i>
-        </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html#home">Home</a>
+                    </li>
 
-        <a href="#" aria-label="Shopping Cart">
-          <i class="bi bi-cart3"></i>
-        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#shop">Shop</a>
+                    </li>
 
-        <a href="#" aria-label="Account">
-          <i class="bi bi-person"></i>
-        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
 
-      </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
 
+            </div>
+
+            <div class="nav-icons d-flex align-items-center">
+
+                <button class="nav-icon border-0"
+                    id="search-toggle"
+                    aria-label="Open search">
+                    ⌕
+                </button>
+
+                <a class="nav-icon" href="cart.html" aria-label="Shopping cart">
+                    🛒
+                    <span class="cart-count">0</span>
+                </a>
+
+                <a class="nav-icon"
+                    href="contact.html"
+                    aria-label="Account and contact">
+                    ♙
+                </a>
+
+            </div>
+
+            <div class="search-box" id="search-box">
+                <input type="search"
+                    placeholder="Search products"
+                    aria-label="Search products">
+
+                <a href="index.html#shop" class="small text-dark">Shop</a>
+            </div>
+
+        </div>
     </nav>
+</header>
 
-  </header>
 
 
   <!-- PRIVACY POLICY CONTENT -->
