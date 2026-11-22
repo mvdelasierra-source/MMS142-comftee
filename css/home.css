@@ -331,7 +331,7 @@ a {
     position: absolute;
     top: 15px;
     left: 15px;
-    background: var(--primary);
+    background: black;
     color: white;
     font-size: 10px;
     font-weight: 800;
