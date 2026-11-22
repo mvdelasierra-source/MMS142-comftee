@@ -341,25 +341,85 @@ a {
     z-index: 2;
 }
 
-/* WISHLIST */
-.heart {
-    position: absolute;
-    top: 12px;
-    right: 14px;
-    z-index: 3;
-    border: none;
-    background: white;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    font-size: 19px;
+
+/* =========================================
+   COMFTEE WISHLIST HEART BUTTON
+   ========================================= */
+.shop-product-image .wishlist-btn {
+    position: absolute !important;
+    top: 15px !important;
+    right: 15px !important;
+
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    color: black !important;
+    font-size: 27px !important;
+
+    z-index: 99 !important;
     cursor: pointer;
-    transition: var(--transition);
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 
-.heart:hover,
-.heart.active {
-    color: #e34e5b;
+.shop-product-image .wishlist-btn i {
+    font-size: 27px !important;
+    color: inherit !important;
+}
+
+.shop-product-image .wishlist-btn:hover {
+    transform: scale(1.15);
+    color: #e63946 !important;
+}
+
+.shop-product-image .wishlist-btn.active {
+    color: #e63946 !important;
+}
+
+.shop-product-image .wishlist-btn.active i {
+    -webkit-text-stroke: 0;
+}
+
+
+
+/* PRODUCT NAME WITH STAR RATING */
+.product-title-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.product-title-rating h5 {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.product-rating i {
+    color: #f5b301;
+    font-size: 13px;
 }
 
 /* PRODUCT INFORMATION */
@@ -413,6 +473,69 @@ a {
     margin: 0 0 20px;
 }
 
+/* =========================================
+   OUR VALUES SECTION
+========================================= */
+
+.about-values {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* WHAT WE BELIEVE IN */
+.about-values .about-label {
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+/* THE COMFTEE WAY */
+.about-values h2 {
+    color: var(--black);
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 2px;
+}
+
+/* FROM AM TO PM */
+.about-values .about-highlight {
+    color: var(--primary-dark);
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+/* DESCRIPTION */
+.about-values .about-description {
+    color: #222222;
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    .about-values {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .about-values h2 {
+        font-size: 30px;
+    }
+
+    .about-values .about-highlight {
+        font-size: 13px;
+    }
+
+    .about-values .about-description {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+}
 /* PRODUCT ACTIONS */
 /* =========================================
    PRODUCT ACTIONS - UPDATED BUTTON COLORS
@@ -615,6 +738,59 @@ a {
     width: 80px;
 }
 
+/* =========================================
+   ABOUT VALUE CARDS
+   ========================================= */
+
+.about-value-card {
+    height: 100%;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.about-value-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* TEAL LABELS */
+.about-value-card span {
+    display: block;
+    color: var(--primary-dark);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+/* BOLD HEADINGS */
+.about-value-card h4 {
+    font-size: 19px;
+    font-weight: 900;
+    color: var(--black);
+    margin-bottom: 15px;
+}
+
+/* DESCRIPTION */
+.about-value-card p {
+    font-size: 13px;
+    line-height: 1.9;
+    color: #666666;
+    margin-bottom: 0;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    .about-value-card {
+        padding: 25px;
+    }
+}
+
 /* SEARCH */
 .search-box {
     display: none;
@@ -638,6 +814,268 @@ a {
     outline: none;
     font-size: 13px;
 }
+
+/* =========================================
+   ABOUT CTA - BACKGROUND IMAGE
+========================================= */
+
+.about-cta-wrapper {
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.about-cta {
+    position: relative;
+    width: 100%;
+    min-height: 250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 35px 20px;
+
+    /* T-SHIRT BACKGROUND IMAGE */
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.20),
+            rgba(255, 255, 255, 0.20)
+        ),
+        url('../images/container-img.jpg');
+
+    background-size: cover;
+    background-position: center 55%;
+    background-repeat: no-repeat;
+
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* TEXT CONTENT */
+.about-cta-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+/* LABEL */
+.about-cta .about-label {
+    color: var(--primary-dark);
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-bottom: 22px;
+}
+
+/* HEADING */
+.about-cta h2 {
+    color: #151515;
+    font-size: 34px;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+/* DESCRIPTION */
+.about-cta .about-description {
+    color: #222222;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.about-cta .btn-teal {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    background: var(--primary);
+    color: #ffffff;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 17px 30px;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.about-cta .btn-teal:hover {
+    background: var(--primary-dark);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 767px) {
+
+    .about-cta-wrapper {
+        padding-top: 35px;
+        padding-bottom: 40px;
+    }
+
+    .about-cta {
+        min-height: 270px;
+        padding: 35px 18px;
+
+        background-position: center;
+    }
+
+    .about-cta .about-label {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .about-cta h2 {
+        font-size: 25px;
+    }
+
+    .about-cta .about-description {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .about-cta .btn-teal {
+        padding: 14px 22px;
+        font-size: 10px;
+    }
+}
+/* =========================================
+   COMFTEE FOOTER - CONTACT PAGE DESIGN
+   ========================================= */
+
+.comftee-footer {
+    width: 100%;
+    margin-top: 0;
+    padding: 35px 0 12px;
+    background: #393c46;
+    color: #f4f4f3;
+    font-family: 'Inter', sans-serif;
+}
+
+.comftee-footer .footer-logo {
+    display: block;
+    width: 132px;
+    height: auto;
+    margin-bottom: 10px;
+    filter: brightness(0) invert(1);
+}
+
+.comftee-footer .footer-brand p {
+    margin: 0 0 12px;
+    color: #f0f0ef;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.comftee-footer .social-links {
+    display: flex;
+    gap: 8px;
+}
+
+.comftee-footer .social-links a {
+    display: grid;
+    width: 23px;
+    height: 23px;
+    place-items: center;
+}
+
+.comftee-footer .social-links img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.comftee-footer .footer-column h2 {
+    margin: 3px 0 12px;
+    color: #f4f4f3;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.comftee-footer .footer-column > a {
+    display: block;
+    margin: 0 0 5px;
+    color: #f0f0ef;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.comftee-footer .footer-column > a:hover,
+.comftee-footer .contact-column a:hover {
+    color: var(--primary);
+}
+
+.comftee-footer .contact-column p {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0 0 14px;
+    color: #f4f4f3;
+    font-size: 11px;
+}
+
+.comftee-footer .contact-icon {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.comftee-footer .contact-column small {
+    display: block;
+    margin-top: 4px;
+    color: #c8c9c9;
+    font-size: 9px;
+    line-height: 1.6;
+}
+
+.comftee-footer .contact-column a {
+    color: #f4f4f3;
+    text-decoration: none;
+}
+
+.comftee-footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 25px;
+    padding-top: 12px;
+    border-top: 1px solid #62656d;
+    color: #b7b8bb;
+    font-size: 10px;
+}
+
+/* MOBILE FOOTER */
+@media (max-width: 575.98px) {
+    .comftee-footer {
+        padding: 28px 0 12px;
+    }
+
+    .comftee-footer .row {
+        --bs-gutter-y: 22px;
+    }
+
+    .comftee-footer .footer-column h2 {
+        font-size: 10px;
+    }
+
+    .comftee-footer .footer-column > a {
+        font-size: 10px;
+    }
+
+    .comftee-footer .footer-bottom {
+        font-size: 8px;
+    }
+}
+
 
 /* TABLET */
 @media (max-width: 991px) {
@@ -839,4 +1277,6 @@ a {
         height: 260px;
         width: 100%;
     }
+
+    
 }
