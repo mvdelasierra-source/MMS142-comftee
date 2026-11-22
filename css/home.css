@@ -1,560 +1,1285 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Comftee everyday essentials and comfortable tees.">
 
-    <title>comftee | Everyday Essentials</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/home.css">
-</head>
-
-<body>
-
-<!-- NAVBAR -->
-<header>
-    <nav class="navbar navbar-expand-lg site-nav">
-        <div class="container-fluid px-4 px-lg-5">
-
-            <a class="brand" href="home.html">comftee</a>
-
-            <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#mainNav"
-                aria-controls="mainNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-center" id="mainNav">
-
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="home.html#home">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="home.html#shop">Shop</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="home.html#about">About</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact-form.html">Contact</a>
-                    </li>
-                </ul>
-
-            </div>
-
-            <div class="nav-icons d-flex align-items-center">
-
-                <button class="nav-icon border-0"
-                    id="search-toggle"
-                    aria-label="Open search">
-                    ⌕
-                </button>
-
-                <a class="nav-icon" href="cart.html" aria-label="Shopping cart">
-                    🛒
-                    <span class="cart-count">0</span>
-                </a>
-
-                <a class="nav-icon"
-                    href="contact.html"
-                    aria-label="Account and contact">
-                    ♙
-                </a>
-
-            </div>
-
-            <div class="search-box" id="search-box">
-                <input type="search"
-                    placeholder="Search products"
-                    aria-label="Search products">
-
-                <a href="home.html#shop" class="small text-dark">Shop</a>
-            </div>
-
-        </div>
-    </nav>
-</header>
-
-
-<main>
-
-    <!-- HERO SECTION -->
-    <section class="container-fluid px-4 px-lg-5" id="home">
-
-        <div class="row hero align-items-center">
-
-            <!-- LEFT CONTENT -->
-            <div class="col-md-6 hero-copy">
-
-                <p class="hero-kicker">From AM to PM</p>
-
-                <h1>EVERYDAY</h1>
-
-                <p class="hero-description">
-                    From your AM commute to your PM plans.
-                    <br>
-                    Upgrade your daily rotation with
-                    <strong>comftee.</strong>
-                </p>
-
-                <div class="hero-actions">
-
-                    <a class="btn btn-teal" href="home.html#shop">
-                        Shop now ➜
-                    </a>
-
-                    <a class="btn btn-outline-dark" href="home.html#about">
-                        About us
-                    </a>
-
-                </div>
-
-                <!-- STATISTICS -->
-                <div class="stats">
-
-                    <div class="stat">
-                        <strong>8K+</strong>
-                        Happy Customers
-                    </div>
-
-                    <div class="stat">
-                        <strong>4.5 <span class="rating-star">★</span></strong>
-                        Average Rating
-                    </div>
-
-                    <div class="stat border-0">
-                        <strong>Premium</strong>
-                        Materials
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- RIGHT IMAGE -->
-            <div class="col-md-6 text-center hero-image-wrapper">
-
-                <img
-                    class="hero-art"
-                    src="images/hero-shirt.jpg"
-                    alt="White Comftee everyday T-shirt">
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- SHOP SECTION -->
-    <section class="container-fluid px-4 px-lg-5 shop-section" id="shop">
-
-        <div class="shop-heading">
-
-            <div>
-                <h2 class="section-label">SHOP HERE</h2>
-            </div>
-
-        </div>
-
-
-        <div class="row g-4" id="product-list">
-
-            <!-- PRODUCT 1 -->
-            <div class="col-lg-4 col-md-6">
-
-                <div class="shop-product-card">
-
-                    <div class="shop-product-image">
-
-                        <img src="images/dblt front.png"
-                            alt="Do Good Work Shirt">
-
-                        <span class="product-tag">16% OFF</span>
-                        <button class="wishlist-btn" onclick="toggleWishlist(this)"
-                        aria-label="Add to wishlist">
-                        <i class="bi bi-heart"></i>
-                    </button>
-
-                    </div>
-
-                    <div class="shop-product-info">
-
-                        <div class="product-title-rating">
-                            <h5>Do Good Work Shirt</h5>
-
-                            <div class="product-rating">
-                                <i class="bi bi-star-fill"></i>
-                                <span>4.5</span>
-                            </div>
-                        </div>
-
-                        <p class="product-price">₱499.00</p>
-
-                        <div class="product-actions">
-
-                            <button class="add-cart-btn"
-                                onclick="addToCart('Do Good Work', 399)">
-                                <i class="bi bi-cart-plus"></i>
-                                ADD TO CART
-                            </button>
-
-                            <a href="productpage.html" class="view-now-btn">
-                                VIEW NOW
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- PRODUCT 2 -->
-            <div class="col-lg-4 col-md-6">
-
-                <div class="shop-product-card">
-
-                    <div class="shop-product-image">
-
-                        <img src="images/ect front.png"
-                            alt="Everyday Comfort Shirt">
-
-                        <span class="product-tag">16% OFF</span>
-
-                        <button class="wishlist-btn"
-                            type="button"
-                            onclick="toggleWishlist(this)"
-                            aria-label="Add to wishlist">
-                            <i class="bi bi-heart"></i>
-                        </button>
-                    </div>
-
-                    <div class="shop-product-info">
-
-                    <div class="product-title-rating">
-                        <h5>Everyday Comfort</h5>
-
-                        <div class="product-rating">
-                            <i class="bi bi-star-fill"></i>
-                            <span>4.5</span>
-                        </div>
-                    </div>
-
-                        <p class="product-price">₱499.00</p>
-
-                        <div class="product-actions">
-
-                            <button class="add-cart-btn"
-                                onclick="addToCart('Do Good Work', 399)">
-                                <i class="bi bi-cart-plus"></i>
-                                ADD TO CART
-                            </button>
-
-                            <a href="productpage.html" class="view-now-btn">
-                                VIEW NOW
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- PRODUCT 3 -->
-            <div class="col-lg-4 col-md-6">
-
-                <div class="shop-product-card">
-
-                    <div class="shop-product-image">
-
-                        <img src="images/dgwt front.png"
-                            alt="Stay Comfortable Shirt">
-
-                        <span class="product-tag">16% OFF</span>
-
-                        <button class="wishlist-btn"
-                            type="button"
-                            onclick="toggleWishlist(this)"
-                            aria-label="Add to wishlist">
-                            <i class="bi bi-heart"></i>
-                        </button>
-                    </div>
-
-                    <div class="shop-product-info">
-
-                        <div class="product-title-rating">
-                            <h5>Stay Comfortable</h5>
-
-                            <div class="product-rating">
-                                <i class="bi bi-star-fill"></i>
-                                <span>4.5</span>
-                            </div>
-                        </div>
-
-                        <p class="product-price">₱499.00</p>
-
-                        <div class="product-actions">
-
-                            <button class="add-cart-btn"
-                                onclick="addToCart('Do Good Work', 399)">
-                                <i class="bi bi-cart-plus"></i>
-                                ADD TO CART
-                            </button>
-
-                            <a href="productpage.html" class="view-now-btn">
-                                VIEW NOW
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ABOUT SECTION -->
-    <section class="about-section" id="about">
-
-<!-- OUR VALUES -->
-<div class="container about-values">
-
-    <div class="text-center mb-5">
-
-        <p class="about-label">WHAT WE BELIEVE IN</p>
-
-        <h2>The comftee Way</h2>
-
-        <p class="about-highlight">FROM AM TO PM</p>
-
-        <p class="about-description">
-            At comftee, long-lasting comfort is our top priority when it comes to practicality.
-            We create versatile essentials for the working class, with each piece designed to keep up with you from
-            morning (AM) to evening (PM).
-        </p>
-
-    </div>
-
-</div>
-
-<div class="row g-4">
-
-    <!-- VALUE 1 -->
-    <div class="col-md-4">
-        <div class="about-value-card">
-            <span>01 / MATERIAL</span>
-            <h4>Made for Everyday Wear</h4>
-            <p>
-                Comftee shirts are made with soft,
-                breathable fabrics crafted for everyday
-                wear. We prioritize long-lasting comfort to
-                keep up with your daily routine.
-            </p>
-        </div>
-    </div>
-
-    <!-- VALUE 2 -->
-    <div class="col-md-4">
-        <div class="about-value-card">
-            <span>02 / FUNCTION</span>
-            <h4>Practical and Versatile</h4>
-            <p>
-                Comftee shirts offer a versatile style
-                suitable for work, errands, and everyday
-                activities. Their elegant, easy-to-match
-                designs make them a staple in your
-                wardrobe.
-            </p>
-        </div>
-    </div>
-
-    <!-- VALUE 3 -->
-    <div class="col-md-4">
-        <div class="about-value-card">
-            <span>03 / COMFORT</span>
-            <h4>Comfort Throughout the Day</h4>
-            <p>
-                We value comfort and believe that it
-                should be the norm, especially with long
-                hours of work. Our Comftee shirts
-                specialize in comfortable fits that allow
-                you to move freely and feel at ease
-                throughout the day.
-            </p>
-        </div>
-    </div>
-
-</div>
-
-<!-- ABOUT CALL TO ACTION -->
-<div class="container about-cta-wrapper">
-
-    <div class="about-cta">
-
-        <div class="about-cta-content">
-
-            <p class="about-label">
-                YOUR EVERYDAY ESSENTIALS
-            </p>
-
-            <h2>Ready to feel comfortable?</h2>
-
-            <p class="about-description">
-                Discover simple and comfortable pieces made for everyday living.
-            </p>
-
-            <a href="home.html#shop" class="btn btn-teal">
-                CHECK OUR COLLECTION
-                <i class="bi bi-arrow-right"></i>
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-    </section>
-
-</main>
-
-
-
-<!-- COMFTEE FOOTER -->
-<footer class="comftee-footer">
-    <div class="container-fluid px-4 px-lg-5">
-
-        <div class="row gy-4">
-
-            <!-- BRAND -->
-            <div class="col-12 col-lg-6 footer-brand">
-                <img src="images/comftee-logo.png"
-                     alt="COMFTEE"
-                     class="footer-logo">
-
-                <p>
-                    Long days, busy schedules, and<br>
-                    everything in between.<br>
-                    Comftee brings comfort to your<br>
-                    everyday rotation, from AM to PM.
-                </p>
-
-                <div class="social-links">
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener">
-                        <img src="images/Facebook.png" alt="Facebook">
-                    </a>
-
-                    <a href="https://www.instagram.com/" target="_blank" rel="noopener">
-                        <img src="images/Instagram.png" alt="Instagram">
-                    </a>
-
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
-                        <img src="images/LinkedIn.png" alt="LinkedIn">
-                    </a>
-                </div>
-            </div>
-
-            <!-- EXPLORE -->
-            <div class="col-6 col-lg-1 footer-column">
-                <h2>EXPLORE</h2>
-                <a href="home.html#home">Home</a>
-                <a href="home.html#shop">Shop</a>
-                <a href="home.html#about">About</a>
-                <a href="contact-form.html">Contact</a>
-            </div>
-
-            <!-- INFORMATION -->
-            <div class="col-6 col-lg-2 footer-column">
-                <h2>INFORMATION</h2>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
-            </div>
-
-            <!-- GET IN TOUCH -->
-            <div class="col-12 col-lg-3 footer-column contact-column">
-                <h2>GET IN TOUCH</h2>
-
-                <p>
-                    <img class="contact-icon"
-                         src="images/Mail.png"
-                         alt="">
-
-                    <span>
-                        Email Us
-                        <small>
-                            Have a question? Send us an email<br>
-                            <a href="mailto:hello@comftee142.com">
-                                hello@comftee142.com
-                            </a>
-                        </small>
-                    </span>
-                </p>
-
-                <p>
-                    <img class="contact-icon"
-                         src="images/Phone call.png"
-                         alt="">
-
-                    <span>
-                        Contact Us
-                        <small>
-                            Need Assistance? Give us a call!<br>
-                            <a href="tel:+639000000000">
-                                +63 900 000 0000
-                            </a>
-                        </small>
-                    </span>
-                </p>
-            </div>
-
-        </div>
-
-        <!-- COPYRIGHT -->
-        <div class="footer-bottom">
-            <span>© 2026 comftee. All Rights Reserved.</span>
-            <span>From AM to PM.</span>
-        </div>
-
-    </div>
-</footer>
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Custom JS -->
-<script src="js/main.js"></script>
-
-</body>
-</html>
+/* =========================================
+   COMFTEE - PREMIUM STREETWEAR
+   Bootstrap 5 | Professional UI
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ROOT */
+:root {
+    --primary: #0bb1aa;
+    --primary-dark: #078f89;
+    --black: #151515;
+    --dark: #222222;
+    --gray: #777777;
+    --light-gray: #f5f6f6;
+    --border: #e8e8e8;
+    --white: #ffffff;
+
+    --radius: 12px;
+    --transition: all .3s ease;
+}
+
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--black);
+    background: var(--white);
+    line-height: 1.6;
+}
+
+a {
+    transition: var(--transition);
+}
+
+/* NAVBAR */
+.site-nav,
+.navbar,
+.navbar-collapse {
+    background: var(--white) !important;
+}
+
+.site-nav {
+    min-height: 76px;
+    padding: 0 5%;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    z-index: 100;
+}
+
+.brand {
+    font-size: 27px;
+    font-weight: 900;
+    letter-spacing: -1.8px;
+    color: var(--black) !important;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    gap: 25px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--black) !important;
+    text-transform: uppercase;
+    padding: 12px 0 !important;
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: var(--transition);
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary) !important;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.nav-icon {
+    position: relative;
+    background: transparent;
+    border: none;
+    color: var(--black) !important;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-icon:hover {
+    color: var(--primary) !important;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -9px;
+    background: var(--primary);
+    color: white;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* HERO */
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 80% 50%,
+            #ffffff 0%,
+            transparent 55%
+        ),
+        linear-gradient(
+            120deg,
+            #eeeeee,
+            #f8f8f8,
+            #ffffff
+        );
+}
+
+.hero-copy {
+    padding-left: 35px;
+}
+
+.hero-kicker {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 6vw, 76px);
+    font-weight: 900;
+    line-height: 1.02;
+    letter-spacing: -4px;
+    max-width: 550px;
+    color: var(--black);
+    margin-bottom: 22px;
+}
+
+.hero-copy > p:not(.hero-kicker) {
+    max-width: 420px;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #666;
+    margin-bottom: 28px;
+}
+
+.hero-art {
+    width: 100%;
+    max-width: 680px;
+    height: 500px;
+    object-fit: contain;
+    filter: drop-shadow(0 25px 25px rgba(0,0,0,.12));
+    transition: transform .5s ease;
+}
+
+.hero-art:hover {
+    transform: scale(1.04);
+}
+
+/* BUTTONS */
+.btn-teal {
+    background: var(--primary) !important;
+    color: white !important;
+    border: 1px solid var(--primary) !important;
+    border-radius: 5px !important;
+    padding: 13px 27px !important;
+    font-size: 11px !important;
+    font-weight: 800 !important;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.btn-teal:hover {
+    background: var(--primary-dark) !important;
+    transform: translateY(-2px);
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.hero-actions .btn-outline-dark {
+    border-radius: 5px;
+    padding: 13px 27px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* STATISTICS */
+.stats {
+    display: flex;
+    gap: 30px;
+    margin-top: 38px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    font-size: 11px;
+    color: var(--gray);
+    border-right: 1px solid #cccccc;
+    padding-right: 25px;
+}
+
+.stat strong {
+    display: block;
+    font-size: 19px;
+    font-weight: 900;
+    color: var(--black);
+}
+
+.rating-star {
+    color: #000000 !important;
+}
+
+/* SHOP SECTION */
+.shop-section {
+    padding: 65px 5%;
+}
+
+.section-label {
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    color: var(--black);
+}
+
+.shop-section::before {
+    content: none;
+}
+
+/* PRODUCT CARDS */
+.product-card,
+.shop-product-card {
+    height: 100%;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.product-card:hover,
+.shop-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.07);
+    border-color: #d5d5d5;
+}
+
+.product-photo {
+    height: 300px;
+    position: relative;
+    background: var(--light-gray);
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.product-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform .5s ease;
+}
+
+.product-card:hover .product-photo img {
+    transform: scale(1.07);
+}
+
+/* SHOP PRODUCT IMAGE */
+.shop-product-image {
+    height: 340px;
+    background: var(--light-gray);
+    position: relative;
+    overflow: hidden;
+}
+
+.shop-product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.shop-product-card:hover .shop-product-image img {
+    transform: scale(1.05);
+}
+
+/* BADGES */
+.discount,
+.product-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: black;
+    color: white;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 7px 12px;
+    border-radius: 3px;
+    z-index: 2;
+}
+
+
+/* =========================================
+   COMFTEE WISHLIST HEART BUTTON
+   ========================================= */
+.shop-product-image .wishlist-btn {
+    position: absolute !important;
+    top: 15px !important;
+    right: 15px !important;
+
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    color: black !important;
+    font-size: 27px !important;
+
+    z-index: 99 !important;
+    cursor: pointer;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.shop-product-image .wishlist-btn i {
+    font-size: 27px !important;
+    color: inherit !important;
+}
+
+.shop-product-image .wishlist-btn:hover {
+    transform: scale(1.15);
+    color: #e63946 !important;
+}
+
+.shop-product-image .wishlist-btn.active {
+    color: #e63946 !important;
+}
+
+.shop-product-image .wishlist-btn.active i {
+    -webkit-text-stroke: 0;
+}
+
+
+
+/* PRODUCT NAME WITH STAR RATING */
+.product-title-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.product-title-rating h5 {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.product-rating i {
+    color: #000000 !important;
+    font-size: 13px;
+}
+/* PRODUCT INFORMATION */
+.product-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 15px 15px 5px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.rating {
+    white-space: nowrap;
+}
+
+.product-price {
+    font-size: 15px;
+    font-weight: 800;
+    margin: 5px 15px 15px;
+    color: var(--black);
+}
+
+.old-price {
+    font-size: 12px;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+.shop-product-info {
+    padding: 22px;
+}
+
+.product-category {
+    color: var(--primary-dark);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.shop-product-info h5 {
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.shop-product-info .product-price {
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+
+/* =========================================
+   OUR VALUES SECTION
+========================================= */
+
+.about-values {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* WHAT WE BELIEVE IN */
+.about-values .about-label {
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+/* THE COMFTEE WAY */
+.about-values h2 {
+    color: var(--black);
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 2px;
+}
+
+/* FROM AM TO PM */
+.about-values .about-highlight {
+    color: var(--primary-dark);
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+/* DESCRIPTION */
+.about-values .about-description {
+    color: #222222;
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    .about-values {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .about-values h2 {
+        font-size: 30px;
+    }
+
+    .about-values .about-highlight {
+        font-size: 13px;
+    }
+
+    .about-values .about-description {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+}
+/* PRODUCT ACTIONS */
+/* =========================================
+   PRODUCT ACTIONS - UPDATED BUTTON COLORS
+   ========================================= */
+
+.product-actions {
+    display: flex;
+    gap: 10px;
+    margin: 0 15px 15px;
+}
+
+.btn-cart,
+.btn-view,
+.add-cart-btn,
+.view-now-btn {
+    flex: 1;
+    min-height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+/* ADD TO CART - WHITE */
+.add-cart-btn {
+    background: white;
+    border: 1px solid var(--black);
+    color: var(--black);
+}
+
+.add-cart-btn:hover {
+    background: var(--black);
+    color: white;
+}
+
+/* VIEW NOW - TEAL */
+.view-now-btn {
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    color: white;
+}
+
+.view-now-btn:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: white;
+}
+
+/* ICON SIZE */
+.add-cart-btn i,
+.view-now-btn i {
+    font-size: 14px;
+}
+
+.btn-view:hover,
+.view-now-btn:hover {
+    background: var(--black);
+    color: white;
+}
+
+/* ABOUT */
+.about-strip {
+    background: var(--light-gray);
+    padding: 65px 5%;
+    border: none;
+}
+
+.about-strip h2 {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+}
+
+.about-strip p {
+    max-width: 650px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.9;
+}
+
+/* FOOTER */
+.site-footer {
+    background: #171717;
+    color: #aaaaaa;
+    padding: 45px 5%;
+    font-size: 12px;
+    border: none;
+}
+
+.site-footer a {
+    color: #eeeeee;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.site-footer a:hover {
+    color: var(--primary);
+}
+
+/* INNER PAGES */
+.page-main {
+    min-height: 65vh;
+    padding: 65px 0;
+}
+
+.page-title {
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+}
+
+.page-lead {
+    color: #777;
+    line-height: 1.9;
+}
+
+.contact-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.04);
+}
+
+.form-control,
+.form-select {
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 13px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(11,177,170,.12);
+}
+
+.form-label {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.policy-section {
+    max-width: 850px;
+}
+
+.policy-section h2 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 30px;
+}
+
+.policy-section p {
+    line-height: 1.9;
+    color: #555;
+}
+
+/* PRODUCT DETAILS */
+.product-detail-image {
+    min-height: 450px;
+    background: var(--light-gray);
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-detail-image img {
+    width: 100%;
+    max-height: 430px;
+    object-fit: contain;
+}
+
+.detail-price {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.detail-old {
+    font-size: 15px;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 8px;
+}
+
+.quantity-input {
+    width: 80px;
+}
+
+/* =========================================
+   ABOUT VALUE CARDS
+   ========================================= */
+
+.about-value-card {
+    height: 100%;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.about-value-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* TEAL LABELS */
+.about-value-card span {
+    display: block;
+    color: var(--primary-dark);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+/* BOLD HEADINGS */
+.about-value-card h4 {
+    font-size: 19px;
+    font-weight: 900;
+    color: var(--black);
+    margin-bottom: 15px;
+}
+
+/* DESCRIPTION */
+.about-value-card p {
+    font-size: 13px;
+    line-height: 1.9;
+    color: #666666;
+    margin-bottom: 0;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    .about-value-card {
+        padding: 25px;
+    }
+}
+
+/* SEARCH */
+.search-box {
+    display: none;
+    position: absolute;
+    right: 25px;
+    top: 65px;
+    z-index: 200;
+    background: white;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.search-box.show {
+    display: flex;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    font-size: 13px;
+}
+
+/* =========================================
+   ABOUT CTA - BACKGROUND IMAGE
+========================================= */
+
+.about-cta-wrapper {
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.about-cta {
+    position: relative;
+    width: 100%;
+    min-height: 250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 35px 20px;
+
+    /* T-SHIRT BACKGROUND IMAGE */
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.20),
+            rgba(255, 255, 255, 0.20)
+        ),
+        url('../images/container-img.jpg');
+
+    background-size: cover;
+    background-position: center 55%;
+    background-repeat: no-repeat;
+
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* TEXT CONTENT */
+.about-cta-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+/* LABEL */
+.about-cta .about-label {
+    color: var(--primary-dark);
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-bottom: 22px;
+}
+
+/* HEADING */
+.about-cta h2 {
+    color: #151515;
+    font-size: 34px;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+/* DESCRIPTION */
+.about-cta .about-description {
+    color: #222222;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.about-cta .btn-teal {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    background: var(--primary);
+    color: #ffffff;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 17px 30px;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.about-cta .btn-teal:hover {
+    background: var(--primary-dark);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 767px) {
+
+    .about-cta-wrapper {
+        padding-top: 35px;
+        padding-bottom: 40px;
+    }
+
+    .about-cta {
+        min-height: 270px;
+        padding: 35px 18px;
+
+        background-position: center;
+    }
+
+    .about-cta .about-label {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .about-cta h2 {
+        font-size: 25px;
+    }
+
+    .about-cta .about-description {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .about-cta .btn-teal {
+        padding: 14px 22px;
+        font-size: 10px;
+    }
+}
+/* =========================================
+   COMFTEE FOOTER - CONTACT PAGE DESIGN
+   ========================================= */
+
+.comftee-footer {
+    width: 100%;
+    margin-top: 0;
+    padding: 35px 0 12px;
+    background: #393c46;
+    color: #f4f4f3;
+    font-family: 'Inter', sans-serif;
+}
+
+.comftee-footer .footer-logo {
+    display: block;
+    width: 132px;
+    height: auto;
+    margin-bottom: 10px;
+    filter: brightness(0) invert(1);
+}
+
+.comftee-footer .footer-brand p {
+    margin: 0 0 12px;
+    color: #f0f0ef;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.comftee-footer .social-links {
+    display: flex;
+    gap: 8px;
+}
+
+.comftee-footer .social-links a {
+    display: grid;
+    width: 23px;
+    height: 23px;
+    place-items: center;
+}
+
+.comftee-footer .social-links img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.comftee-footer .footer-column h2 {
+    margin: 3px 0 12px;
+    color: #f4f4f3;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.comftee-footer .footer-column > a {
+    display: block;
+    margin: 0 0 5px;
+    color: #f0f0ef;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.comftee-footer .footer-column > a:hover,
+.comftee-footer .contact-column a:hover {
+    color: var(--primary);
+}
+
+.comftee-footer .contact-column p {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0 0 14px;
+    color: #f4f4f3;
+    font-size: 11px;
+}
+
+.comftee-footer .contact-icon {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.comftee-footer .contact-column small {
+    display: block;
+    margin-top: 4px;
+    color: #c8c9c9;
+    font-size: 9px;
+    line-height: 1.6;
+}
+
+.comftee-footer .contact-column a {
+    color: #f4f4f3;
+    text-decoration: none;
+}
+
+.comftee-footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 25px;
+    padding-top: 12px;
+    border-top: 1px solid #62656d;
+    color: #b7b8bb;
+    font-size: 10px;
+}
+
+/* MOBILE FOOTER */
+@media (max-width: 575.98px) {
+    .comftee-footer {
+        padding: 28px 0 12px;
+    }
+
+    .comftee-footer .row {
+        --bs-gutter-y: 22px;
+    }
+
+    .comftee-footer .footer-column h2 {
+        font-size: 10px;
+    }
+
+    .comftee-footer .footer-column > a {
+        font-size: 10px;
+    }
+
+    .comftee-footer .footer-bottom {
+        font-size: 8px;
+    }
+}
+
+
+/* TABLET */
+@media (max-width: 991px) {
+    .site-nav {
+        padding: 0 20px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 55px 0;
+    }
+
+    .hero-copy {
+        padding-left: 20px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .hero-art {
+        height: 390px;
+    }
+
+    .navbar-nav {
+        gap: 10px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    .site-nav {
+        min-height: 65px;
+        padding: 5px 15px;
+    }
+
+    .brand {
+        font-size: 23px;
+    }
+
+    .navbar-nav {
+        gap: 3px;
+    }
+
+    .nav-icons {
+        margin: 12px 0;
+    }
+
+    .hero {
+        padding: 40px 0 25px;
+        text-align: center;
+    }
+
+    .hero-copy {
+        padding: 0 20px;
+    }
+
+    .hero-kicker {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+        letter-spacing: -2px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-copy > p:not(.hero-kicker) {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 13px;
+    }
+
+    .hero-actions,
+    .stats {
+        justify-content: center;
+    }
+
+    .hero-art {
+        height: 330px;
+        width: 100%;
+    }
+
+    .shop-section {
+        padding: 40px 18px;
+    }
+
+    .section-label {
+        font-size: 22px;
+    }
+
+    .product-photo {
+        height: 220px;
+    }
+
+    .shop-product-image {
+        height: 240px;
+    }
+
+    .shop-product-info {
+        padding: 15px;
+    }
+
+    .product-actions {
+        flex-direction: column;
+    }
+
+    .about-strip {
+        padding: 45px 20px;
+    }
+
+    .about-strip h2 {
+        font-size: 25px;
+    }
+
+    .site-footer {
+        padding: 35px 20px;
+    }
+
+    .site-footer a {
+        display: inline-block;
+        margin: 5px 10px 5px 0;
+    }
+
+    .page-main {
+        padding: 40px 15px;
+    }
+
+    .page-title {
+        font-size: 34px;
+    }
+
+    .product-detail-image {
+        min-height: 300px;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-art {
+        height: 270px;
+    }
+
+    .stats {
+        gap: 12px;
+    }
+
+    .stat {
+        padding-right: 10px;
+    }
+}
+
+
+/* =========================================
+   ABOUT SECTION IMAGE RESIZING
+   ========================================= */
+
+/* ABOUT BANNER IMAGE */
+.about-intro .about-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 12px;
+}
+
+/* ABOUT STORY IMAGE */
+.about-story .about-image {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 12px;
+}
+
+/* TABLET */
+@media (max-width: 991px) {
+    .about-intro .about-image {
+        height: 350px;
+    }
+
+    .about-story .about-image {
+        height: 330px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    .about-intro .about-image,
+    .about-story .about-image {
+        height: 260px;
+        width: 100%;
+    }
+
+    
+}
