@@ -251,6 +251,10 @@ a {
     color: var(--black);
 }
 
+.rating-star {
+    color: #000000 !important;
+}
+
 /* SHOP SECTION */
 .shop-section {
     padding: 65px 5%;
@@ -418,10 +422,9 @@ a {
 }
 
 .product-rating i {
-    color: #f5b301;
+    color: #000000 !important;
     font-size: 13px;
 }
-
 /* PRODUCT INFORMATION */
 .product-meta {
     display: flex;
