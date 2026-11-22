@@ -55,3 +55,23 @@ backToTop.addEventListener("click", function() {
     });
 
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const cartCount = document.getElementById("cartCount");
+
+    if (!cartCount) return;
+
+    let items = [];
+
+    try {
+        items = JSON.parse(localStorage.getItem("comfteeCartItems") || "[]");
+    } catch (error) {
+        items = [];
+    }
+
+    const total = Array.isArray(items)
+        ? items.reduce((sum, item) => sum + (Number(item.quantity) || 0), 0)
+        : 0;
+
+    cartCount.textContent = total;
+});
