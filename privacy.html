@@ -26,77 +26,28 @@
 
   <!-- NAVIGATION BAR -->
 <!-- NAVBAR -->
-<header>
-    <nav class="navbar navbar-expand-lg site-nav">
-        <div class="container-fluid px-4 px-lg-5">
-
-            <a class="brand" href="home.html">comftee</a>
-
-            <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#mainNav"
-                aria-controls="mainNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-center" id="mainNav">
-
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="home.html#home">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="home.html#shop">Shop</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="home.html#about">About</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact-form.html">Contact</a>
-                    </li>
-                </ul>
-
-            </div>
-
-            <div class="nav-icons d-flex align-items-center">
-
-                <button class="nav-icon border-0"
-                    id="search-toggle"
-                    aria-label="Open search">
-                    ⌕
-                </button>
-
-                <a class="nav-icon" href="cart.html" aria-label="Shopping cart">
-                    🛒
-                    <span class="cart-count">0</span>
-                </a>
-
-                <a class="nav-icon"
-                    href="contact.html"
-                    aria-label="Account and contact">
-                    ♙
-                </a>
-
-            </div>
-
-            <div class="search-box" id="search-box">
-                <input type="search"
-                    placeholder="Search products"
-                    aria-label="Search products">
-
-                <a href="index.html#shop" class="small text-dark">Shop</a>
-            </div>
-
+<header class="site-header">
+      <nav class="navbar navbar-expand-lg container-fluid px-4 px-xl-5" aria-label="Main navigation">
+        <a class="navbar-brand" href="home.html" aria-label="COMFTEE home"><img src="images/comftee-logo.png" alt="COMFTEE" class="brand-logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNavigation">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="home.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="home.html#shop">SHOP</a></li>
+            <li class="nav-item"><a class="nav-link" href="home.html#about">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact-form.html">CONTACT</a></li>
+          </ul>
+          <div class="nav-tools">
+            <a class="icon-button" href="home.html#shop" aria-label="Search"><span class="search-symbol"></span></a>
+            <a class="icon-button cart-nav" href="cart.html" aria-label="Shopping cart">
+              <img src="images/shopping-cart.png" alt="Cart">
+              <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+            </a>
+            <a class="icon-button" href="contact-form.html" aria-label="Account"><img src="images/person.png" alt="Profile"></a>
+          </div>
         </div>
-    </nav>
-</header>
+      </nav>
+    </header>
 
 
 
@@ -150,121 +101,36 @@
   </main>
 
 
-  <!-- FOOTER -->
   <footer class="site-footer">
-
-    <div class="footer-main">
-
-      <!-- BRAND COLUMN -->
-      <div class="footer-brand-column">
-
-        <a href="#" class="footer-brand">comftee</a>
-
-        <p class="footer-description">
-          Long days, busy schedules, and<br>
-          everything in between.<br>
-          Comftee brings comfort to your<br>
-          everyday rotation, from AM to PM.
-        </p>
-
-        <div class="social-links">
-
-          <a href="#" class="facebook" aria-label="Facebook">
-            <i class="bi bi-facebook"></i>
-          </a>
-
-          <a href="#" class="instagram" aria-label="Instagram">
-            <i class="bi bi-instagram"></i>
-          </a>
-
-          <a href="#" class="linkedin" aria-label="LinkedIn">
-            <i class="bi bi-linkedin"></i>
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <!-- EXPLORE -->
-      <div class="footer-column">
-
-        <h2>EXPLORE</h2>
-
-        <a href="#">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-
-      </div>
-
-
-      <!-- INFORMATION -->
-      <div class="footer-column">
-
-        <h2>INFORMATION</h2>
-
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms &amp; Conditions</a>
-
-      </div>
-
-
-      <!-- CONTACT -->
-      <div class="footer-column contact-column">
-
-        <h2>GET IN TOUCH</h2>
-
-        <div class="contact-item">
-
-          <i class="bi bi-envelope"></i>
-
-          <div>
-            <h3>Email Us</h3>
-
-            <p>Have a question? Send us an email!</p>
-
-            <a href="mailto:hello@comftee142.com">
-              hello@comftee142.com
-            </a>
+      <div class="container-fluid px-4 px-lg-5">
+        <div class="row gy-4">
+          <div class="col-12 col-lg-6 footer-brand">
+            <img src="images/comftee-logo.png" alt="COMFTEE" class="footer-logo">
+            <p>Long days, busy schedules, and<br> everything in between.<br>Comftee brings comfort to your<br> everyday rotation, from AM to PM.</p>
+            <div class="social-links" aria-label="Social media">
+              <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener"><img src="images/Facebook.png" alt="Facebook"></a>
+              <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener"><img src="images/Instagram.png" alt="Instagram"></a>
+              <a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener"><img src="images/LinkedIn.png" alt="LinkedIn"></a>
+            </div>
           </div>
-
-        </div>
-
-
-        <div class="contact-item">
-
-          <i class="bi bi-telephone"></i>
-
-          <div>
-            <h3>Contact Us</h3>
-
-            <p>Need Assistance? Give us a call!</p>
-
-            <a href="tel:+639000000000">
-              +63 900 000 0000
-            </a>
+          <div class="col-6 col-lg-1 footer-column"><h2>EXPLORE</h2><a href="home.html">Home</a><a href="home.html#shop">Shop</a><a href="home.html#about">About</a><a href="contact-form.html">Contact</a></div>
+          <div class="col-6 col-lg-2 footer-column"><h2>INFORMATION</h2><a href="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html">Terms &amp; Conditions</a></div>
+          <div class="col-12 col-lg-3 footer-column contact-column">
+            <h2>GET IN TOUCH</h2>
+            <p><img class="contact-icon" src="images/Mail.png" alt="Mail"><span>Email Us<small>Have a question? Send us an email<br><a href="mailto:hello@comftee142.com">hello@comftee142.com</a></small></span></p>
+            <p><img class="contact-icon" src="images/Phone call.png" alt="Phone call"><span>Contact Us<small>Need Assistance? Give us a call!<br><a href="tel:+639000000000">+63 900 000 0000</a></small></span></p>
           </div>
-
         </div>
-
+        <div class="footer-bottom"><span>© 2026 comftee. All Rights Reserved.</span><span>From AM to PM.</span></div>
       </div>
+    </footer>
+    
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    ↑
+    </button>
 
-    </div>
-
-
-    <!-- FOOTER BOTTOM -->
-    <div class="footer-bottom">
-
-      <span>© 2026 comftee. All Rights Reserved.</span>
-
-      <span>From AM to PM.</span>
-
-    </div>
-
-  </footer>
-<!-- JavaScript -->
-  <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/privacy.js" defer></script>
 
 </body>
 </html>
