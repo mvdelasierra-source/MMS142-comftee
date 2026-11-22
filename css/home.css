@@ -414,6 +414,10 @@ a {
 }
 
 /* PRODUCT ACTIONS */
+/* =========================================
+   PRODUCT ACTIONS - UPDATED BUTTON COLORS
+   ========================================= */
+
 .product-actions {
     display: flex;
     gap: 10px;
@@ -429,6 +433,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 8px;
     text-align: center;
     border-radius: 5px;
     font-size: 10px;
@@ -440,24 +445,35 @@ a {
     text-decoration: none;
 }
 
-.btn-cart,
+/* ADD TO CART - WHITE */
 .add-cart-btn {
+    background: white;
+    border: 1px solid var(--black);
+    color: var(--black);
+}
+
+.add-cart-btn:hover {
+    background: var(--black);
+    color: white;
+}
+
+/* VIEW NOW - TEAL */
+.view-now-btn {
     background: var(--primary);
     border: 1px solid var(--primary);
     color: white;
 }
 
-.btn-cart:hover,
-.add-cart-btn:hover {
+.view-now-btn:hover {
     background: var(--primary-dark);
+    border-color: var(--primary-dark);
     color: white;
 }
 
-.btn-view,
-.view-now-btn {
-    background: white;
-    border: 1px solid var(--black);
-    color: var(--black);
+/* ICON SIZE */
+.add-cart-btn i,
+.view-now-btn i {
+    font-size: 14px;
 }
 
 .btn-view:hover,
